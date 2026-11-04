@@ -36,9 +36,15 @@ The workflow is designed for Kaggle and evaluates a selective VASC-Guard model o
 
 ## Data and required artifacts
 
-The notebook expects the following resources:
+This study uses the DRIVE, STARE, and CHASE_DB1 retinal vessel datasets. They are available from their respective providers, subject to each provider's access and usage conditions:
 
-| Resource | Expected source |
+- [DRIVE](https://drive.grand-challenge.org/)
+- [STARE](https://cecas.clemson.edu/~ahoover/stare/)
+- [CHASE_DB1](https://researchinnovation.kingston.ac.uk/en/datasets/chasedb1-retinal-vessel-reference-dataset-4/)
+
+For reproducible notebook execution, the code expects the following mounted resources:
+
+| Resource | Expected runtime source |
 | --- | --- |
 | DRIVE | `Zomba/DRIVE-digital-retinal-images-for-vessel-extraction` on Hugging Face |
 | CHASE_DB1 | Kaggle dataset mounted at `/kaggle/input/datasets/khoongweihao/chasedb1` |
